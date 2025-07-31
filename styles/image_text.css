@@ -1,0 +1,113 @@
+.image_text_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  max-width: 90%;
+}
+
+.image_text_section .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(0);
+  /* Default for animation override */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.image_text_section .slide-in-left {
+  transform: translateX(-60px);
+}
+
+.image_text_section .slide-in-right {
+  transform: translateX(60px);
+}
+
+.image_text_section .grid-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.image_text_section .grid-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 45px;
+  display: block;
+}
+
+.image_text_section .text-content {
+  display: flex;
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* Align to left */
+  text-align: left;
+  /* Align text to the left */
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image_text_section .text-content h2 {
+  margin: 0 0 1rem 0;
+  /* Add space below heading */
+  width: 150%;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.image_text_section .text-content ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.image_text_section .text-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Desktop: Add vertical space between rows */
+@media (min-width: 769px) {
+
+  .image_text_section .second-row-text,
+  .image_text_section .second-row-image {
+    margin-top: 7rem;
+  }
+}
+
+/* Mobile: Stack layout + spacing */
+@media (max-width: 768px) {
+  .image_text_section {
+    grid-template-columns: 1fr;
+  }
+
+  .image_text_section .grid-item {
+    width: 100%;
+  }
+
+  .image_text_section .second-row-image {
+    order: 1;
+    margin-top: 3rem;
+  }
+
+  .image_text_section .second-row-text {
+    order: 2;
+  }
+
+  /* Space between stacked items */
+  .image_text_section .grid-item:not(:first-child) {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,120 @@
+/* ========== BASE STYLES ========== */
+
+.logoImage {
+  width: 20%;
+  margin-top: -250px;
+}
+
+.topBlock {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+.topBlock h2 {
+  text-shadow:
+    0 0 5px #107bab,
+    0 0 10px #107bab,
+    0 0 20px #107bab,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
+}
+
+/* Desktop Grid Navigation */
+.topBlock .info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.topBlock .info-cell {
+  background: #f0f0f0;
+  border-radius: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.topBlock .info-cell a {
+  font-weight: 600;
+  color: #107bab;
+  border: 2px solid #107bab;
+  border-radius: 15px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.topBlock .info-cell:hover {
+  background-color: #ddd;
+}
+
+/* Mobile Nav Hidden by Default (Overridden in mobile.css) */
+.mobile-nav {
+  display: none;
+  background: #fff;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #107bab;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+/* ========== HEADER TEXT ========== */
+.headerText {
+  width: 90%;
+  max-width: 720px;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.headerText p {
+  width: 170%;
+  margin: -50px 0 0 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+/* ========== BOTTOM SECTION ========== */
+.bottomBlock {
+  margin: 4rem 0;
+}
+
+.bottomBlock .info-grid {
+  width: 70%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+.bottomBlock .info-cell {
+  background: transparent;
+  text-align: left;
+  border: none;
+}
+
+.info-cell img {
+  background-color: #fdfdfd;
+  border: 2px solid #107bab;
+  padding: 50px;
+  border-radius: 10px;
+}

@@ -1,0 +1,76 @@
+
+
+.aboutGrid, .aboutSection {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutSection_Text p, .aboutSection_Text h3 {
+    width: 80%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-cell {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 0;
+    margin: 0;
+}
+
+/* Header section */
+.info-header {
+    width: 100%;
+    background-color: #00354d;
+    border-radius: 10px;
+}
+.info-body {
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-header h3 {
+    margin: 0;
+    /* Remove default margin */
+    padding: 15px;
+    color: #fff;
+    /* Optional: white text */
+}
+
+/* Body section */
+.info-body {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.info-body p {
+    margin: 0 0 1rem 0;
+}
+
+.icon {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.abouticon {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.abouticon1 {
+  background-image: url('../media/Icons/Bizkey_Icons_designed-by-befound-studio-02.png');
+}
+.abouticon2 {
+  background-image: url('../media/Icons/Bizkey_Icons_designed-by-befound-studio-01.png');
+}
+.abouticon3 {
+  background-image: url('../media/Icons/Bizkey_Icons_designed-by-befound-studio-03.png');
+  margin-top: 50px;
+}

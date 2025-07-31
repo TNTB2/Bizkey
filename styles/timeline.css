@@ -1,0 +1,294 @@
+:root {
+    --circle-size: 50px;
+    --branch-length: 100px;
+    --branch-thickness: 3px;
+}
+
+/* TIMELINE SECTION WRAPPER */
+.timeline-section {
+    width: 100%;
+    background: #11111100;
+    padding: 4rem 1rem;
+    overflow: visible;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Desktop Horizontal Timeline ===== */
+.timeline {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 350px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    background: #ffffffe8;
+    height: var(--branch-thickness);
+    width: 0;
+    top: 50%;
+    left: 0;
+    transition: width 1s ease;
+    z-index: 0;
+}
+
+.timeline.drawn::before {
+    width: 100%;
+}
+
+.timeline-item {
+    position: relative;
+    text-align: center;
+    width: var(--circle-size);
+    flex-shrink: 0;
+}
+
+.timeline-point {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background: #272727e8;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: var(--circle-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    border: var(--branch-thickness) solid #ffffff;
+    box-sizing: border-box;
+    animation: none;
+}
+
+.timeline-point.active {
+    animation: spinBorder 1s linear forwards;
+}
+
+@keyframes spinBorder {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.timeline-line {
+    position: absolute;
+    background: #ffffff;
+    transition: transform 0.6s ease, height 0.6s ease, width 0.6s ease;
+    transform-origin: center;
+    z-index: 1;
+}
+
+/* Lines from the timeline point */
+.line-top {
+    bottom: 100%;
+    left: 50%;
+    width: var(--branch-thickness);
+    height: 0;
+    transform: translateX(-50%) scaleY(0);
+}
+
+.line-bottom {
+    top: 100%;
+    left: 50%;
+    width: var(--branch-thickness);
+    height: 0;
+    transform: translateX(-50%) scaleY(0);
+}
+
+.timeline-item.active .line-top,
+.timeline-item.active .line-bottom {
+    height: var(--branch-length);
+    transform: translateX(-50%) scaleY(1);
+}
+
+.timeline-label {
+    position: absolute;
+    width: max-content;
+    max-width: 180px;
+    font-size: 0.9rem;
+    color: white;
+    background: rgba(0, 123, 255, 0.15);
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.5s;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.timeline-item.active .timeline-label {
+    opacity: 1;
+}
+
+.label-top {
+    top: calc(-1 * var(--branch-length) - var(--circle-size) / 2 - 1rem);
+    left: 50%;
+}
+
+.label-bottom {
+    bottom: calc(-1 * var(--branch-length) - var(--circle-size) / 2 - 1rem);
+    left: 50%;
+}
+
+/* ===== Mobile Vertical Timeline ===== */
+.timeline-mobile {
+    display: none;
+    /* Hidden on desktop */
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+
+    .timeline {
+        display: none;
+    }
+
+    .left {
+        margin-left: -50px;
+    }
+
+    .timeline-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* space out points evenly */
+        height: 100vh;
+        /* full viewport height */
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        overflow: visible;
+    }
+
+    .timeline-mobile::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: var(--branch-thickness);
+        background-color: #ffffff;
+        height: 0;
+        /* start hidden */
+        transition: height 1s ease;
+        z-index: 0;
+    }
+
+    .timeline-mobile.drawn::before {
+        height: 100%;
+        /* full height when drawn */
+    }
+
+    .timeline-item-mobile {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    /* The timeline points centered on the vertical line */
+    .timeline-point {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        background: #272727e8;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .timeline-content {
+        display: flex;
+        align-items: center;
+        max-width: 50%;
+        position: relative;
+    }
+
+    /* Odd items: branch line and label on left side */
+    .timeline-item-mobile:nth-child(odd) .timeline-content {
+        flex-direction: row-reverse;
+        /* line then label */
+        justify-content: flex-end;
+        padding-right: calc(var(--branch-length) + 1rem);
+        text-align: right;
+    }
+
+    .timeline-item-mobile:nth-child(odd) .branch-line {
+        margin-left: 0.5rem;
+        margin-right: 0;
+        order: 1;
+        /* line first */
+        width: var(--branch-length);
+        height: var(--branch-thickness);
+        background: #ffffff;
+    }
+
+    .timeline-item-mobile:nth-child(odd) .label {
+        order: 2;
+        /* label second */
+    }
+
+    /* Even items: branch line and label on right side */
+    .timeline-item-mobile:nth-child(even) .timeline-content {
+        flex-direction: row;
+        /* line then label */
+        justify-content: flex-start;
+        padding-left: calc(var(--branch-length) + 1rem);
+        text-align: left;
+    }
+
+    .timeline-item-mobile:nth-child(even) .branch-line {
+        margin-left: 0;
+        margin-right: 0.5rem;
+        order: 1;
+        width: var(--branch-length);
+        height: var(--branch-thickness);
+        background: #ffffff;
+    }
+
+    .timeline-item-mobile:nth-child(even) .label {
+        order: 2;
+    }
+
+    /* Animate branch and label on scroll */
+    .branch-line,
+    .label {
+        opacity: 0;
+        transform: translateX(10px);
+        transition: all 0.6s ease;
+    }
+
+    .timeline-item-mobile.visible .branch-line,
+    .timeline-item-mobile.visible .label {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

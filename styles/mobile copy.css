@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    .dividerHeading {
+        margin-top: 1100px;
+    }
+
+    .dividerHeading2 {
+        margin-top: 150px;
+    }
+
+    .info-grid {
+        margin-top: 100px;
+    }
+
+    .timeline-mobile {
+        margin-top: 250px;
+    }
+
+    .image-slider {
+        margin-top: 150px;
+    }
+
+    .contact-grid {
+        margin-top: 250px;
+    }
+
+    .dividerHeading3 {
+        margin-top: 10px;
+    }
+
+}

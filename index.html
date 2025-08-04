@@ -38,6 +38,7 @@
                 <div class="info-cell"><a href="#dividerHeading2">Bookkeeping</a></div>
                 <div class="info-cell"><a href="#dividerHeading3">Statements</a></div>
                 <div class="info-cell"><a href="#dividerHeading4">Catch Up</a></div>
+                <div class="info-cell"><a href="#dividerHeading2">Payroll</a></div>
             </section>
         </nav>
         <!-- Mobile Navigation -->
@@ -52,6 +53,7 @@
                 <li><a href="#dividerHeading2">Bookkeeping</a></li>
                 <li><a href="#dividerHeading3">Statements</a></li>
                 <li><a href="#dividerHeading4">Catch Up</a></li>
+                <li><a href="#dividerHeading2">Payroll</a></li>
             </ul>
         </nav>
 
@@ -98,7 +100,7 @@
                     <p><b>SAIT</b> - South African Insitute of
                         Tax Professionals
                         <br><br>
-                        Bizkey is officially registered with and a
+                        Officially registered with and a
                         proud member of (SAIT). This ensures we
                         uphold the highest professional standards,
                         provide accurate, up-to-date tax advice,
@@ -111,9 +113,9 @@
                     <br>
                     <p>
                         <b>CIBA</b> - Chartered Institute for
-                        BUSINESS ACCOUNTANTS NPC
+                        Buisiness Accountants NPC
                         <br><br>
-                        Bizkey is proudly registered with and
+                        Proudly registered with and
                         a member of the Chartered Institute
                         for Business Accountants (CIBA) NPC.
                         This affiliation signifies Bizkey's
@@ -126,9 +128,9 @@
                     <img src="./media/Registered Icons-Logos/SARS-bizkey-board.png" alt="bizkey" class="icon_Heading">
                     <br>
                     <p>
-                        <b>SARS</b> - REGISTERED SARS TAX PRACTITIONER
+                        <b>SARS</b> - Registered SARS TAX Practitioner
                         <br><br>
-                        Bizkey as a registration assures clients
+                        Registration assures clients
                         that our tax professionals are recognized
                         by SARS, qualified, and adhere to a strict
                         code of conduct. Trust Bizkey to handle
@@ -211,7 +213,7 @@
                         <li>EMP201 monthly submissions</li>
                         <li>EMP501 bi-annual submissions</li>
                     </ul>
-                    <i>Note: This service includes the monthly calculation of
+                    <i><b>Note: </b>This service includes the monthly calculation of
                         salaries and the preparation of pay slips. Pay slips
                         can be emailed monthly to employees or printed
                         copies provided. A summary of the payroll is
@@ -321,12 +323,24 @@
 
                 </section>
             </section>
-
         </section>
+
+        <img src="./media/Images/pexels-bizkey-image-befound-studio-04.jpg" alt="Decorative Background"
+            class="aboutGridBg" />
 
 
         <h1 class="dividerHeading dividerHeading4 scroll-fade" id="dividerHeading4">CONTACT US TODAY</h1>
-        <button class="contactBtn">Take the First Step</button>
+        <button class="contactBtn" id="backToTopBtn">Take the First Step</button>
+        <script>
+            document.getElementById('scrollToSectionBtn').addEventListener('click', function () {
+                const target = document.getElementById('dividerHeading1');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        </script>
+
+
 
     </main>
 
@@ -338,7 +352,9 @@
                     <i class="fa fa-phone" style="font-size:48px;color:#00354d"></i>
                 </div>
                 <div class="card-details">
-                    <h4>083 456 4014</h4>
+                    <h4>
+                        <a href="tel:‪+27840756865‬">‪083 456 4014‬</a>
+                    </h4>
                 </div>
             </div>
 
@@ -358,7 +374,9 @@
                     <i class="fa fa-envelope" style="font-size:48px;color:#00354d"></i>
                 </div>
                 <div class="email-text">
-                    <h4>office@biskey.co.za</h4>
+                    <h4>
+                        <a href="mailto:office@biskey.co.za?subject=Hello&body=How are you?">office@biskey.co.za</a>
+                    </h4>
                 </div>
             </div>
         </div>

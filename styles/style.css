@@ -9,7 +9,9 @@
   font-family: myFirstFont_bold;
   src: url('../media/CenturyGothic/centurygothic_bold.ttf');
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;

@@ -9,6 +9,7 @@
   position: relative;
   padding: 1rem;
   margin: 0 auto;
+  margin-top: -350px;
   max-width: 960px;
   text-align: center;
 }
@@ -25,7 +26,7 @@
 /* Desktop Grid Navigation */
 .topBlock .info-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 
@@ -48,7 +49,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 
 .topBlock .info-cell:hover {

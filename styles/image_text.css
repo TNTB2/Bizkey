@@ -78,6 +78,12 @@
   line-height: 1.5;
 }
 
+.text-content i {
+  font-style: italic;
+  font-size: smaller;
+  margin: 10px 0;
+}
+
 /* Desktop: Add vertical space between rows */
 @media (min-width: 769px) {
 

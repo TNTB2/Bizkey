@@ -9,8 +9,12 @@
         width: 80%;
         margin: 0 auto;
         display: block;
-        margin-top: 1rem;
+        margin-top: -400px;
     }
+    .content {
+        margin-top: -120px;
+    }
+
 
     .dividerHeading,
     .dividerHeading1,

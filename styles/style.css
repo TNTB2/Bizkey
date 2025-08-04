@@ -1,8 +1,21 @@
 /* Reset & Base */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../media/CenturyGothic/centurygothic.ttf');
+}
+
+@font-face {
+  font-family: myFirstFont_bold;
+  src: url('../media/CenturyGothic/centurygothic_bold.ttf');
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: myFirstFont;
 }
 
 body {
@@ -14,10 +27,14 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h4 a {
   margin-bottom: 0.5em;
   color: #ffffff;
   text-align: center;
+}
+.text-content i {
+  font-family: myFirstFont_bold;
 }
 
 p {
@@ -56,6 +73,12 @@ p {
 .dividerHeading1 {
   background-image: url('../media/Textures/bizkey-hand-logo-pattern-designed-by-befound-studio-thick.png');
   margin-top: -50px;
+  font-size: 2.3em;
+  padding: 10px;
+}
+.dividerHeading1 b {
+  font-size: 1.1em;
+  font-family: myFirstFont_bold;
 }
 
 .dividerHeading2 {

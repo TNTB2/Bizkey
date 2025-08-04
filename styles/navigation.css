@@ -2,14 +2,12 @@
 
 .logoImage {
   width: 20%;
-  margin-top: -250px;
 }
 
 .topBlock {
   position: relative;
   padding: 1rem;
   margin: 0 auto;
-  margin-top: -350px;
   max-width: 960px;
   text-align: center;
 }

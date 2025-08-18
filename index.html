@@ -1,815 +1,412 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-
-
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bizkey</title>
 
-    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./media/Logo/Bizkey-logo-south_africa-designed_by_Befound_Studio.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Bizkey</title>
-
-
-
-    <link rel="icon" type="image/x-icon" href="./media/Logo/Bizkey-logo-south_africa-designed_by_Befound_Studio.png">
-
-
-
-    <link rel="stylesheet" href="./styles/style.css" />
-
-    <link rel="stylesheet" href="./styles/parallax_gradient.css" />
-
-    <link rel="stylesheet" href="./styles/navigation.css" />
-
-    <link rel="stylesheet" href="./styles/icon_grid.css" />
-
-    <link rel="stylesheet" href="./styles/image_text.css" />
-
-    <link rel="stylesheet" href="./styles/timeline.css" />
-
-    <link rel="stylesheet" href="./styles/contact.css" />
-
-    <link rel="stylesheet" href="./styles/about_section.css" />
-
-    <link rel="stylesheet" href="./styles/mobile.css" />
-
-    <link rel="stylesheet" href="./styles/footer.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/parallax_gradient.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/icon_grid.css" />
+    <link rel="stylesheet" href="./styles/image_text.css" />
+    <link rel="stylesheet" href="./styles/timeline.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/about_section.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
-
 <body>
-
-    <div class="gradient-layer"></div>
-
-
-
-    <header class="main-header">
-
-        <img class="logoImage" src="./media/Logo/Bizkey-logo-south_africa-designed_by_Befound_Studio.png"
-
-            alt="Description 1" />
-
-    </header>
-
-
-
-    <main class="content">
-
-        <!-- Desktop Navigation -->
-
-        <nav class="nav_block topBlock">
-
-            <h2>Specialized in supporting Micro & Small businesses.</h2>
-
-            <section class="info-grid" id="topBlockNav">
-
-                <div class="info-cell"><a href="#dividerHeading1">Taxes</a></div>
-
-                <div class="info-cell"><a href="#dividerHeading2">Bookkeeping</a></div>
-
-                <div class="info-cell"><a href="#dividerHeading3">Financial Statements</a></div>
-
-                <div class="info-cell"><a href="#dividerHeading4">Catch Up</a></div>
-
-                <div class="info-cell"><a href="#dividerHeading2">Payroll</a></div>
-
-            </section>
-
-        </nav>
-
-        <!-- Mobile Navigation -->
-
-        <nav class="mobile-nav">
-
-            <button id="burgerBtn" class="burger" aria-expanded="false" aria-controls="mobileMenu"
-
-                aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
-
-                &#9776;
-
-            </button>
-
-
-
-            <ul class="mobile-menu" id="mobileMenu">
-
-                <li><a href="#dividerHeading1">Taxes</a></li>
-
-                <li><a href="#dividerHeading2">Bookkeeping</a></li>
-
-                <li><a href="#dividerHeading3">Statements</a></li>
-
-                <li><a href="#dividerHeading4">Catch Up</a></li>
-
-                <li><a href="#dividerHeading2">Payroll</a></li>
-
-            </ul>
-
-        </nav>
-
-
-
-        <!-- Internal Script at the bottom of <body> -->
-
-        <script>
-
-            function toggleMobileMenu() {
-
-                const mobileMenu = document.getElementById("mobileMenu");
-
-                const burgerBtn = document.getElementById("burgerBtn");
-
-
-
-                if (mobileMenu && burgerBtn) {
-
-                    console.log("Burger button clicked");
-
-                    mobileMenu.classList.toggle("show");
-
-
-
-                    // Update ARIA expanded
-
-                    const isExpanded = burgerBtn.getAttribute("aria-expanded") === "true";
-
-                    burgerBtn.setAttribute("aria-expanded", !isExpanded);
-
-                } else {
-
-                    console.warn("Burger button or mobile menu not found.");
-
-                }
-
-            }
-
-        </script>
-
-
-
-
-
-
-
-        <div class="headerText">
-
-            <p>
-
-                Bizkey is officially registered with and a
-
-                proud member of (SAIT) and (CIBA). This ensures we
-
-                uphold the highest professional standards,
-
-                provide accurate, up-to-date tax advice,
-
-                and adhere to a strict code of ethics for
-
-                all your tax needs in South Africa.
-
-            </p>
-
-            <br><br>
-
-            <h2>REGISTERED</h2>
-
-        </div>
-
-
-
-
-
-        <section class="nav_block bottomBlock">
-
-            <section class="info-grid">
-
-                <div class="info-cell">
-
-                    <img src="./media/Registered Icons-Logos/SAIT-bizkey-board.png" alt="bizkey" class="icon_Heading">
-
-                    <br>
-
-                    <p><b>SAIT</b> - South African Insitute of
-
-                        Tax Professionals
-
-                        <br><br>
-
-                        Officially registered with and a
-
-                        proud member of (SAIT). This ensures we
-
-                        uphold the highest professional standards,
-
-                        provide accurate, up-to-date tax advice,
-
-                        and adhere to a strict code of ethics for
-
-                        all your tax needs in South Africa.
-
-                    </p>
-
-                </div>
-
-                <div class="info-cell">
-
-                    <img src="./media/Registered Icons-Logos/CIBA-bizkey-board.png" alt="bizkey" class="icon_Heading">
-
-                    <br>
-
-                    <p>
-
-                        <b>CIBA</b> - Chartered Institute for
-
-                        Buisiness Accountants NPC
-
-                        <br><br>
-
-                        Proudly registered with and
-
-                        a member of the Chartered Institute
-
-                        for Business Accountants (CIBA) NPC.
-
-                        This affiliation signifies Bizkey's
-
-                        commitment to high professional
-
-                        standards and expertise in business
-
-                        accounting.
-
-                    </p>
-
-                </div>
-
-                <div class="info-cell">
-
-                    <img src="./media/Registered Icons-Logos/SARS-bizkey-board.png" alt="bizkey" class="icon_Heading">
-
-                    <br>
-
-                    <p>
-
-                        <b>SARS</b> - Registered SARS TAX Practitioner
-
-                        <br><br>
-
-                        Registration assures clients
-
-                        that our tax professionals are recognized
-
-                        by SARS, qualified, and adhere to a strict
-
-                        code of conduct. Trust Bizkey to handle
-
-                        your tax affairs with expertise, ensuring
-
-                        accurate, compliant submissions and
-
-                        effective representation with SARS.
-
-                    </p>
-
-                </div>
-
-            </section>
-
-        </section>
-
-
-
-        <h1 class="dividerHeading dividerHeading1 scroll-fade" id="dividerHeading1">
-
-            We <b>handle</b> your <b>books</b> so you <br>
-
-            can get <b>on</b> with your <b>business.</b>
-
-        </h1>
-
-
-
-        <section class="contact_block">
-
-            <!-- Contact Section -->
-
-            <section class="contact-grid">
-
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/morne@bizkey.co.za"
-
-                    method="POST">
-
-                    <input type="hidden" name="_captcha" value="false" />
-
-
-
-                    <h3><b>Take the First Step - </b> Contact Us.</h3>
-
-                    <input type="text" name="name" placeholder="Full Name*" required />
-
-                    <input type="email" name="email" placeholder="Email Address*" required />
-
-                    <input type="tel" name="contact" placeholder="Contact Number*" required />
-
-                    <input type="text" name="company" placeholder="Company Name*" required />
-
-                    <input type="text" name="industry" placeholder="Industry*" required />
-
-                    <textarea name="message" placeholder="Comment"></textarea>
-
-                    <button type="submit">Send Message</button>
-
-                </form>
-
-            </section>
-
-        </section>
-
-
-
-        <h1 class="dividerHeading dividerHeading2 scroll-fade" id="dividerHeading2">SERVICES</h1>
-
-        <div class="headerText">
-
-            <br><br>
-
-            <h2>All encompassing accounting solutions</h2>
-
-            <br>
-
-            <p>
-
-                Bizkey strives to provide clients with the most comprehensive business tools and services.
-
-                <br><br>
-
-                These tools and services are customisable to suit your specific business needs.
-
-                A complete function of financial services, forms part of this service and are set out as below:
-
-            </p>
-
-        </div>
-
-
-
-        <section class="image_text_section">
-
-            <!-- First Row: Image Left -->
-
-            <div class="grid-item image-left slide-in-left">
-
-                <img src="./media/Images/pexels-bizkey-image-befound-studio-01.jpg" alt="Description 1" />
-
-            </div>
-
-            <div class="grid-item text-right slide-in-right">
-
-                <div class="text-content">
-
-                    <h3>Accounting and Bookkeeping</h3>
-
-                    <ul>
-
-                        <li>Bookkeeping (both monthly and ad-hoc)</li>
-
-                        <li>Management reporting</li>
-
-                        <li>Capture cashbook on accounting software</li>
-
-                        <li>Debtors reconciliation</li>
-
-                        <li>Creditors reconciliation</li>
-
-                        <li>Bank reconciliations</li>
-
-                          <li>Annual Returns</li>
-
-                        <li>Monthly Income Statements</li>
-
-                        <li>Balance Sheets</li>
-
-                    </ul>
-
-
-
-                </div>
-
-            </div>
-
-            <!-- Second Row: Image Left -->
-
-            <div class="grid-item image-left slide-in-left">
-
-                <img src="./media/Images/pexels-bizkey-image-befound-studio-02.jpg" alt="Description 1" />
-
-            </div>
-
-            <div class="grid-item text-right slide-in-right">
-
-                <div class="text-content">
-
-                    <h3>Payroll</h3>
-
-                    <ul>
-
-                        <li>Once off salary structuring (per employee)</li>
-
-                        <li>Pay slips (per employee, monthly)</li>
-
-                        <li>EMP201 monthly submissions</li>
-
-                        <li>EMP501 bi-annual submissions</li>
-
-                    </ul>
-
-                    <i><b>Note: </b>This service includes the monthly calculation of
-
-                        salaries and the preparation of pay slips. Pay slips
-
-                        can be emailed monthly to employees or printed
-
-                        copies provided. A summary of the payroll is
-
-                        provided to management.</i>
-
-                </div>
-
-            </div>
-
-            <!-- Third Row: Image Left -->
-
-            <div class="grid-item image-left slide-in-left">
-
-                <img src="./media/Images/pexels-bizkey-image-befound-studio-03.jpg" alt="Description 1" />
-
-            </div>
-
-            <div class="grid-item text-right slide-in-right">
-
-                <div class="text-content">
-
-                    <h3>Registrations</h3>
-
-                    <ul>
-
-                        <li>Registration of new businesses</li>
-
-                        <li>SARS tax registrations</li>
-
-                        <li>CIPC Registrations</li>
-
-                        <li>Director/Member Amendments</li>
-
-                        <li>Annual Registrations</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-
-        </section>
-
-
-
-        <h1 class="dividerHeading dividerHeading3 scroll-fade" id="dividerHeading3">About Section</h1>
-
-
-
-        <section class="aboutSection">
-
-            <div class="aboutSection_Text">
-
-                <h2>BIZKEY accounting solutions</h2>
-
-                <p>
-
-                    Nationwide Web-Based Accounting for Micro & Small Businesses
-
-                    We do work nationwide, bringing our expertise directly to you,
-
-                    no matter where your business is located in South Africa.
-
-                    While our operations are primarily based in Gauteng,
-
-                    our reach extends across the country.
-
-                    <br><br>
-
-                    At Bizkey, we specialize in supporting Micro & Small businesses.
-
-                    We understand the unique challenges and opportunities these
-
-                    ventures face, offering tailored solutions to help them thrive.
-
-                    <br><br>
-
-                    Bizkey is leading the way by transforming traditional desk-based
-
-                    accounting to web-based solutions. This cutting-edge,
-
-                    technology-driven platform enables us to seamlessly communicate and collaborate
-
-                    with our clients throughout South Africa, providing efficient,
-
-                    accessible, and modern accounting services wherever you are.
-
-                </p>
-
-            </div>
-
-
-
-
-
-            <section class="aboutGrid">
-
-                <section class="info-grid">
-
-
-
-                    <div class="info-cell lower-info-cell">
-
-                        <div class="info-header">
-
-                            <h3>Outsourced Solutions</h3>
-
-                        </div>
-
-                        <div class="info-body">
-
-                            <p>
-
-                                <br><br>
-
-                                With outsourced
-
-                                accounting services,
-
-                                you’ll have more time
-
-                                to focus on your
-
-                                core business.
-
-                            </p>
-
-                            <div class="abouticon abouticon1">
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="info-cell lower-info-cell">
-
-                        <div class="info-header">
-
-                            <h3>Accurate and Timeous</h3>
-
-                        </div>
-
-                        <div class="info-body">
-
-                            <p>
-
-                                <br><br>
-
-                                There is no margin for error
-
-                                when it comes to
-
-                                accounting. Attention
-
-                                to detail and meeting
-
-                                deadlines are
-
-                                our top priorities.
-
-                            </p>
-
-                            <div class="abouticon abouticon2"></div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="info-cell lower-info-cell">
-
-                        <div class="info-header">
-
-                            <h3>Cost Effective</h3>
-
-                        </div>
-
-                        <div class="info-body">
-
-                            <p>
-
-                                <br><br>
-
-                                Accounting services do
-
-                                not have to cost and
-
-                                arm and a leg –
-
-                                we’ll save you both.
-
-                            </p>
-
-                            <div class="abouticon abouticon3"></div>
-
-                        </div>
-
-                    </div>
-
-
-
-                </section>
-
-            </section>
-
-        </section>
-
-
-
-        <img src="./media/Images/pexels-bizkey-image-befound-studio-04.jpg" alt="Decorative Background"
-
-            class="aboutGridBg" />
-
-
-
-
-
-        <h1 class="dividerHeading dividerHeading4 scroll-fade" id="dividerHeading4">CONTACT US TODAY</h1>
-
-        <button class="contactBtn" id="backToTopBtn">Take the First Step</button>
-
-
-
-        <script>
-
-            document.getElementById('backToTopBtn').addEventListener('click', function () {
-
-                const target = document.getElementById('dividerHeading1');
-
-                if (target) {
-
-                    target.scrollIntoView({ behavior: 'smooth' });
-
-                }
-
-            });
-
-        </script>
-
-
-
-
-
-
-
-
-
-    </main>
-
-
-
-    <footer class="site-footer">
-
-        <div class="footer-grid">
-
-            <!-- Business Card Style -->
-
-            <div class="footer-section business-card">
-
-                <div class="card-logo">
-
-                    <i class="fa fa-phone" style="font-size:48px;color:#00354d"></i>
-
-                </div>
-
-                <div class="card-details">
-
-                    <h4>
-
-                        <a href="tel:‪+27840756865‬">‪083 456 4014‬</a>
-
-                    </h4>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- Address Block -->
-
-            <div class="footer-section address-info">
-
-                <div class="card-logo">
-
-                    <i class="fa fa-map-marker" style="font-size:48px;color:#00354d"></i>
-
-                </div>
-
-                <div class="address-text">
-
-                    <h4>Johannesburg, Gauteng</h4>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- Social Media Icons -->
-
-            <div class="footer-section email-address">
-
-                <div class="email-icons">
-
-                    <i class="fa fa-envelope" style="font-size:48px;color:#00354d"></i>
-
-                </div>
-
-                <div class="email-text">
-
-                    <h4>
-
-                        <a href="mailto:morne@biskey.co.za?subject=Hello&body=How are you?">morne@biskey.co.za</a>
-
-                    </h4>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- Aurora Border Overlay -->
-
-        <div class="aurora-border-top"></div>
-
-
-
-
-
-        <div class="footer-bottom">
-
-            <p>&copy; Joevian pty ltd, Designed and managed by 3D-evelop and Befound-Studios All rights reserved</p>
-
-        </div>
-
-    </footer>
-
-
-
-
-
-
-
-    <script src="./scripts/parallax_gradient.js"></script>
-
-    <script src="./scripts/navigation.js"></script>
-
-    <script src="./scripts/contactForm.js"></script>
-
-    <script src="./scripts/script.js"></script>
-
-    <script src="./scripts/image_text.js"></script>
-
-    <script src="./scripts/timeline.js"></script>
-
-    <script src="./scripts/heading_fade_scroll.js"></script>
-
-
+    <div class="gradient-layer"></div>
+
+    <header class="main-header">
+        <img class="logoImage" src="./media/Logo/Bizkey-logo-south_africa-designed_by_Befound_Studio.png"
+            alt="Description 1" />
+    </header>
+
+    <main class="content">
+        <!-- Desktop Navigation -->
+        <nav class="nav_block topBlock">
+            <h2>Specialized in supporting Micro & Small businesses.</h2>
+            <section class="info-grid" id="topBlockNav">
+                <div class="info-cell"><a href="#dividerHeading1">Taxes</a></div>
+                <div class="info-cell"><a href="#dividerHeading2">Bookkeeping</a></div>
+                <div class="info-cell"><a href="#dividerHeading3">Statements</a></div>
+                <div class="info-cell"><a href="#dividerHeading4">Catch Up</a></div>
+                <div class="info-cell"><a href="#dividerHeading2">Payroll</a></div>
+            </section>
+        </nav>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <button id="burgerBtn" class="burger" aria-expanded="false" aria-controls="mobileMenu"
+                aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+                &#9776;
+            </button>
+
+            <ul class="mobile-menu" id="mobileMenu">
+                <li><a href="#dividerHeading1">Taxes</a></li>
+                <li><a href="#dividerHeading2">Bookkeeping</a></li>
+                <li><a href="#dividerHeading3">Statements</a></li>
+                <li><a href="#dividerHeading4">Catch Up</a></li>
+                <li><a href="#dividerHeading2">Payroll</a></li>
+            </ul>
+        </nav>
+
+        <!-- Internal Script at the bottom of <body> -->
+        <script>
+            function toggleMobileMenu() {
+                const mobileMenu = document.getElementById("mobileMenu");
+                const burgerBtn = document.getElementById("burgerBtn");
+
+                if (mobileMenu && burgerBtn) {
+                    console.log("Burger button clicked");
+                    mobileMenu.classList.toggle("show");
+
+                    // Update ARIA expanded
+                    const isExpanded = burgerBtn.getAttribute("aria-expanded") === "true";
+                    burgerBtn.setAttribute("aria-expanded", !isExpanded);
+                } else {
+                    console.warn("Burger button or mobile menu not found.");
+                }
+            }
+        </script>
+
+
+
+        <div class="headerText">
+            <p>
+                Bizkey is officially registered with and a
+                proud member of (SAIT). This ensures we
+                uphold the highest professional standards,
+                provide accurate, up-to-date tax advice,
+                and adhere to a strict code of ethics for
+                all your tax needs in South Africa.
+            </p>
+            <br><br>
+            <h2>REGISTERED</h2>
+        </div>
+
+
+        <section class="nav_block bottomBlock">
+            <section class="info-grid">
+                <div class="info-cell">
+                    <img src="./media/Registered Icons-Logos/SAIT-bizkey-board.png" alt="bizkey" class="icon_Heading">
+                    <br>
+                    <p><b>SAIT</b> - South African Insitute of
+                        Tax Professionals
+                        <br><br>
+                        Officially registered with and a
+                        proud member of (SAIT). This ensures we
+                        uphold the highest professional standards,
+                        provide accurate, up-to-date tax advice,
+                        and adhere to a strict code of ethics for
+                        all your tax needs in South Africa.
+                    </p>
+                </div>
+                <div class="info-cell">
+                    <img src="./media/Registered Icons-Logos/CIBA-bizkey-board.png" alt="bizkey" class="icon_Heading">
+                    <br>
+                    <p>
+                        <b>CIBA</b> - Chartered Institute for
+                        Buisiness Accountants NPC
+                        <br><br>
+                        Proudly registered with and
+                        a member of the Chartered Institute
+                        for Business Accountants (CIBA) NPC.
+                        This affiliation signifies Bizkey's
+                        commitment to high professional
+                        standards and expertise in business
+                        accounting.
+                    </p>
+                </div>
+                <div class="info-cell">
+                    <img src="./media/Registered Icons-Logos/SARS-bizkey-board.png" alt="bizkey" class="icon_Heading">
+                    <br>
+                    <p>
+                        <b>SARS</b> - Registered SARS TAX Practitioner
+                        <br><br>
+                        Registration assures clients
+                        that our tax professionals are recognized
+                        by SARS, qualified, and adhere to a strict
+                        code of conduct. Trust Bizkey to handle
+                        your tax affairs with expertise, ensuring
+                        accurate, compliant submissions and
+                        effective representation with SARS.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <h1 class="dividerHeading dividerHeading1 scroll-fade" id="dividerHeading1">
+            We <b>handle</b> your <b>books</b> so you <br>
+            can get <b>on</b> with your <b>business.</b>
+        </h1>
+
+        <section class="contact_block">
+            <!-- Contact Section -->
+            <section class="contact-grid">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/morne@bizkey.co.za"
+                    method="POST">
+                    <input type="hidden" name="_captcha" value="false" />
+
+                    <h3><b>Take the First Step - </b> Contact Us.</h3>
+                    <input type="text" name="name" placeholder="Full Name*" required />
+                    <input type="email" name="email" placeholder="Email Address*" required />
+                    <input type="tel" name="contact" placeholder="Contact Number*" required />
+                    <input type="text" name="company" placeholder="Company Name*" required />
+                    <input type="text" name="industry" placeholder="Industry*" required />
+                    <textarea name="message" placeholder="Comment"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </section>
+
+        <h1 class="dividerHeading dividerHeading2 scroll-fade" id="dividerHeading2">SERVICES</h1>
+        <div class="headerText">
+            <br><br>
+            <h2>All encompassing accounting solutions</h2>
+            <br>
+            <p>
+                Bizkey strives to provide clients with the most comprehensive business tools and services.
+                <br><br>
+                These tools and services are customisable to suit your specific business needs.
+                A complete function of financial services, forms part of this service and are set out as below:
+            </p>
+        </div>
+
+        <section class="image_text_section">
+            <!-- First Row: Image Left -->
+            <div class="grid-item image-left slide-in-left">
+                <img src="./media/Images/pexels-bizkey-image-befound-studio-01.jpg" alt="Description 1" />
+            </div>
+            <div class="grid-item text-right slide-in-right">
+                <div class="text-content">
+                    <h3>Accounting and Bookkeeping</h3>
+                    <ul>
+                        <li>Bookkeeping (both monthly and ad-hoc)</li>
+                        <li>Management reporting</li>
+                        <li>Capture cashbook on accounting software</li>
+                        <li>Debtors reconciliation</li>
+                        <li>Creditors reconciliation</li>
+                        <li>Bank reconciliations</li>
+                        <li>Monthly Income Statements</li>
+                        <li>Balance Sheets</li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- Second Row: Image Left -->
+            <div class="grid-item image-left slide-in-left">
+                <img src="./media/Images/pexels-bizkey-image-befound-studio-02.jpg" alt="Description 1" />
+            </div>
+            <div class="grid-item text-right slide-in-right">
+                <div class="text-content">
+                    <h3>Payroll</h3>
+                    <ul>
+                        <li>Once off salary structuring (per employee)</li>
+                        <li>Pay slips (per employee, monthly)</li>
+                        <li>EMP201 monthly submissions</li>
+                        <li>EMP501 bi-annual submissions</li>
+                    </ul>
+                    <i><b>Note: </b>This service includes the monthly calculation of
+                        salaries and the preparation of pay slips. Pay slips
+                        can be emailed monthly to employees or printed
+                        copies provided. A summary of the payroll is
+                        provided to management.</i>
+                </div>
+            </div>
+            <!-- Third Row: Image Left -->
+            <div class="grid-item image-left slide-in-left">
+                <img src="./media/Images/pexels-bizkey-image-befound-studio-03.jpg" alt="Description 1" />
+            </div>
+            <div class="grid-item text-right slide-in-right">
+                <div class="text-content">
+                    <h3>Registrations</h3>
+                    <ul>
+                        <li>Registration of new businesses</li>
+                        <li>SARS tax registrations</li>
+                        <li>CIPC Registrations</li>
+                        <li>Director/Member Amendments</li>
+                        <li>Anual Registrations</li>
+                        <li>Tax Clearance Certificate (TCC) / <br>
+                            Tax Compliance Status (TCS)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <h1 class="dividerHeading dividerHeading3 scroll-fade" id="dividerHeading3">About Section</h1>
+
+        <section class="aboutSection">
+            <div class="aboutSection_Text">
+                <h2>BIZKEY accounting solutions</h2>
+                <p>
+                    Nationwide Web-Based Accounting for Micro & Small Businesses
+                    We do work nationwide, bringing our expertise directly to you,
+                    no matter where your business is located in South Africa.
+                    While our operations are primarily based in Gauteng,
+                    our reach extends across the country.
+                    <br><br>
+                    At Bizkey, we specialize in supporting Micro & Small businesses.
+                    We understand the unique challenges and opportunities these
+                    ventures face, offering tailored solutions to help them thrive.
+                    <br><br>
+                    Bizkey is leading the way by transforming traditional desk-based
+                    accounting to web-based solutions. This cutting-edge,
+                    technology-driven platform enables us to seamlessly communicate and collaborate
+                    with our clients throughout South Africa, providing efficient,
+                    accessible, and modern accounting services wherever you are.
+                </p>
+            </div>
+
+
+            <section class="aboutGrid">
+                <section class="info-grid">
+
+                    <div class="info-cell lower-info-cell">
+                        <div class="info-header">
+                            <h3>Outsourced Solutions</h3>
+                        </div>
+                        <div class="info-body">
+                            <p>
+                                <br><br>
+                                With outsourced
+                                accounting services,
+                                you’ll have more time
+                                to focus on your
+                                core business.
+                            </p>
+                            <div class="abouticon abouticon1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-cell lower-info-cell">
+                        <div class="info-header">
+                            <h3>Accurate and Timeous</h3>
+                        </div>
+                        <div class="info-body">
+                            <p>
+                                <br><br>
+                                There is no margin for error
+                                when it comes to
+                                accounting. Attention
+                                to detail and meeting
+                                deadlines are
+                                our top priorities.
+                            </p>
+                            <div class="abouticon abouticon2"></div>
+                        </div>
+                    </div>
+
+                    <div class="info-cell lower-info-cell">
+                        <div class="info-header">
+                            <h3>Cost Effective</h3>
+                        </div>
+                        <div class="info-body">
+                            <p>
+                                <br><br>
+                                Accounting services do
+                                not have to cost and
+                                arm and a leg –
+                                we’ll save you both.
+                            </p>
+                            <div class="abouticon abouticon3"></div>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+        </section>
+
+        <img src="./media/Images/pexels-bizkey-image-befound-studio-04.jpg" alt="Decorative Background"
+            class="aboutGridBg" />
+
+
+        <h1 class="dividerHeading dividerHeading4 scroll-fade" id="dividerHeading4">CONTACT US TODAY</h1>
+        <button class="contactBtn" id="backToTopBtn">Take the First Step</button>
+
+        <script>
+            document.getElementById('backToTopBtn').addEventListener('click', function () {
+                const target = document.getElementById('dividerHeading1');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        </script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <!-- Business Card Style -->
+            <div class="footer-section business-card">
+                <div class="card-logo">
+                    <i class="fa fa-phone" style="font-size:48px;color:#00354d"></i>
+                </div>
+                <div class="card-details">
+                    <h4>
+                        <a href="tel:‪+27840756865‬">‪083 456 4014‬</a>
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Address Block -->
+            <div class="footer-section address-info">
+                <div class="card-logo">
+                    <i class="fa fa-map-marker" style="font-size:48px;color:#00354d"></i>
+                </div>
+                <div class="address-text">
+                    <h4>Johannesburg, Gauteng</h4>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="footer-section email-address">
+                <div class="email-icons">
+                    <i class="fa fa-envelope" style="font-size:48px;color:#00354d"></i>
+                </div>
+                <div class="email-text">
+                    <h4>
+                        <a href="mailto:office@biskey.co.za?subject=Hello&body=How are you?">office@biskey.co.za</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aurora Border Overlay -->
+        <div class="aurora-border-top"></div>
+        <div class="footer-bottom">
+            <br>
+            <a href="/privacy_policy.html">Privacy Policy</a>
+            <br>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Joevian pty ltd, Designed and managed by 3D-evelop and Befound-Studios All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="./scripts/parallax_gradient.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/contactForm.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/image_text.js"></script>
+    <script src="./scripts/timeline.js"></script>
+    <script src="./scripts/heading_fade_scroll.js"></script>
 
 </body>
-
-
-
-
-
 
 
 </html>

@@ -1,0 +1,127 @@
+/* Reset & Base */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../media/CenturyGothic/centurygothic.ttf');
+}
+
+@font-face {
+  font-family: myFirstFont_bold;
+  src: url('../media/CenturyGothic/centurygothic_bold.ttf');
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1.2em;
+  background: #f5f5f5;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h4 a {
+  margin-bottom: 0.5em;
+  color: #ffffff;
+  text-align: center;
+}
+.text-content i {
+  font-family: myFirstFont_bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Divider Headings */
+.dividerHeading {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  background-image: url('../media/Textures/bizkey-hand-logo-pattern-designed-by-befound-studio-thin.png');
+  background-size: cover;
+  background-color: #0c809b;
+  padding: 50px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+
+  /* Apply a radial mask for inward opacity fade */
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-size: 150% 150%;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  mask-size: 150% 150%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  margin: 50px 0;
+  pointer-events: none;
+}
+
+.dividerHeading1 {
+  background-image: url('../media/Textures/bizkey-hand-logo-pattern-designed-by-befound-studio-thick.png');
+  margin-top: -50px;
+  font-size: 2.3em;
+  padding: 10px;
+}
+.dividerHeading1 b {
+  font-size: 1.1em;
+  font-family: myFirstFont_bold;
+}
+
+.dividerHeading2 {
+  margin-top: 100px;
+}
+
+.dividerHeading3 {
+  margin-top: 50px;
+}
+
+.dividerHeading4 {
+  margin-top: 50px;
+}
+
+.dividerHeading::before,
+.dividerHeading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 2px;
+  transition: opacity 1.2s ease;
+  opacity: 0;
+}
+
+.dividerHeading::before {
+  left: 0;
+}
+
+.dividerHeading::after {
+  right: 0;
+}
+
+/* When visible */
+.scroll-fade.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scroll-fade.visible.dividerHeading::before,
+.scroll-fade.visible.dividerHeading::after {
+  opacity: 1;
+
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.bizkey.co.za/sitemap.xml

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Root (main landing page) -->
+  <url>
+    <loc>https://bizkey.co.za/</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Taxes Section -->
+  <url>
+    <loc>https://bizkey.co.za/#dividerHeading1</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bookkeeping Section -->
+  <url>
+    <loc>https://bizkey.co.za/#dividerHeading2</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Statements Section -->
+  <url>
+    <loc>https://bizkey.co.za/#dividerHeading3</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Catch Up Section -->
+  <url>
+    <loc>https://bizkey.co.za/#dividerHeading4</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Payroll Section (same ID as bookkeeping, but listed separately for navigation) -->
+  <url>
+    <loc>https://bizkey.co.za/#dividerHeading2</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

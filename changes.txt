@@ -1,0 +1,11 @@
+04/08/2025
+* _Move header text and services upwards up until paragraph text
+* _add payroll to services grid
+* _Format issues at registered grid do that everything is in sentence case
+* _Add image to the text behind the about section grid
+* _ensure the header services grid's text is centered 
+* _enlargen the font size of the header "We handle your books so you can get on with your business." 
+* _"take the first steps button" must link to contact form
+* _make number and email hyperlinks in the footer
+* _malke the "Note:..." text is smaller and in itallic in the payrol section 
+* _Font-family needs to update

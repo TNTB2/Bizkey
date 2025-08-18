@@ -49,12 +49,15 @@
   font-size: 0.85rem;
   color: #aaa;
 }
+
 .footer-bottom a {
   font-weight: bolder;
 }
+
 a:visited {
   color: #494949;
 }
+
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .site-footer {
